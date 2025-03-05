@@ -1,0 +1,113 @@
+
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.profile-card {
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-info {
+    padding: 10px 0;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.designation {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Social media icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: Sky;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #333;
+    color: red;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profile-card {
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-card {
+        width: 200px;
+    }
+
+    .bio {
+        font-size: 0.8rem;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
